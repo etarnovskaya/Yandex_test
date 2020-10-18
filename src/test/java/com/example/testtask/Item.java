@@ -1,16 +1,29 @@
 package com.example.testtask;
 
 public class Item {
-    private final String itemType;
-    private final String priceFrom;
-    private final String priceTo;
-    private final String brand;
+    private String itemType;
+    private String priceFrom;
+    private String priceTo;
+    private String brand;
 
-    public Item(String itemType, String priceFrom, String priceTo, String brand) {
+    public Item setItemType(String itemType) {
         this.itemType = itemType;
+        return  this;
+    }
+
+    public Item setPriceFrom(String priceFrom) {
         this.priceFrom = priceFrom;
+        return  this;
+    }
+
+    public Item setPriceTo(String priceTo) {
         this.priceTo = priceTo;
+        return  this;
+    }
+
+    public Item setBrand(String brand) {
         this.brand = brand;
+        return  this;
     }
 
     public String getItemType() {
