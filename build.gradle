@@ -26,3 +26,10 @@ task testy(type:Test){
         systemProperty 'browser', "${browser}"
     }
 }
+
+test{
+    useTestNG()
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+}
